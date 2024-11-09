@@ -1,0 +1,36 @@
+data:
+  name: "london_poi_os"
+  path: "data/london_poi_202203/poi_desc_sampled.csv"
+
+model:
+  text_encoder: "sentence_transformers"
+  location_encoder: 
+    pe_type: "grid"
+    nn_type: fcnet
+    min_lambda: 100
+    max_lambda: 10000
+    frequency_num: 32
+    dim_hidden: 256
+    dim_output: 128
+
+training:
+  seed: 42
+  resume: False
+  batch_size: 64  # 1024
+  num_workers: 16
+  max_epochs: 100
+  learning_rate: 0.001
+  # momentum: 0.9
+  weight_decay: 0.01
+  # lr_scheduler: "step"
+  # lr_step_size: 30
+  # lr_gamma: 0.1  
+
+lightning:
+  # expname: "auto"
+  accelerator: "gpu"
+  devices: [0]
+  logger: "tensorboard"
+  logdir: "logs"
+  save_model: True
+  results_dir: "results"

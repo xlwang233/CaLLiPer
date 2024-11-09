@@ -1,0 +1,1 @@
+Download pre-trained checkpoints into this folder
