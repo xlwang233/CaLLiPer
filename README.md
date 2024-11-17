@@ -55,7 +55,7 @@ We plan to add more stuff in the future:
 
 ## Acknowledgements
 
-The implementation of various location encoding methods is based on [Space2Vec](https://github.com/gengchenmai/space2vec) and [Spherical Harmonics and Sinusoidal Representation Networks](https://github.com/MarcCoru/locationencoder).
+The implementation of various location encoding methods is based on [Space2Vec](https://github.com/gengchenmai/space2vec) and [Spherical Harmonics and Sinusoidal Representation Networks](https://github.com/MarcCoru/locationencoder). This work has also been inspired by [SatCLIP](https://github.com/microsoft/satclip).
 
 We appreciate their inspiring works.
 
