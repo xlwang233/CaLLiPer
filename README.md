@@ -62,5 +62,10 @@ We appreciate their inspiring works.
 ## Citation
 
 ```bibtex
-
+@article{wang2024multimodal,
+  title={Multimodal Contrastive Learning of Urban Space Representations from POI Data},
+  author={Wang, Xinglei and Cheng, Tao and Law, Stephen and Zeng, Zichao and Yin, Lu and Liu, Junyuan},
+  journal={arXiv preprint arXiv:2411.06229},
+  year={2024}
+}
 ```
