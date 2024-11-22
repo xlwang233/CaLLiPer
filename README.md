@@ -1,5 +1,5 @@
 # CaLLiPer - Contrastive Language-Location Pre-training
-Welcome! This is the repository for *CaLLiPer* model presented in our paper Multimodal Contrastive Learning of Urban Space Representations from POI Data.
+Welcome! This is the repository for *CaLLiPer* model presented in our paper Multimodal Contrastive Learning of Urban Space Representations from POI Data (preprint: https://arxiv.org/abs/2411.06229). 
 
 ## :star: Highlights
 
@@ -50,8 +50,9 @@ Note that due to the size of *CaLLiPer-Llama*, we have not provided its checkpoi
 ## TODOs
 We plan to add more stuff in the future:
 
-:black_square_button: Baseline model (implementation or checkpoints)
-:black_square_button: Visualisation code
+:white_check_mark: Pre-trained results for Space2Vec and HGI. See `baselines/pretrained`.
+:white_check_mark: Code for clustering visualisation (reproducing Figure 3 in the paper). See `vis_clustering.ipynb`.
+:black_square_button: Code for TF-IDF, LDA, Place2Vec. Coming soon.
 
 ## Acknowledgements
 
@@ -60,7 +61,7 @@ The implementation of various location encoding methods is based on [Space2Vec](
 We appreciate their inspiring works.
 
 ## Citation
-
+If you find this repo useful for your research, please consider citing the following paper:
 ```bibtex
 @article{wang2024multimodal,
   title={Multimodal Contrastive Learning of Urban Space Representations from POI Data},
