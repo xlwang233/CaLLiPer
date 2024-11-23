@@ -51,7 +51,9 @@ Note that due to the size of *CaLLiPer-Llama*, we have not provided its checkpoi
 We plan to add more stuff in the future:
 
 :white_check_mark: Pre-trained results for Space2Vec and HGI. See `baselines/pretrained`.
+
 :white_check_mark: Code for clustering visualisation (reproducing Figure 3 in the paper). See `vis_clustering.ipynb`.
+
 🔲 Code for TF-IDF, LDA, Place2Vec. Coming soon.
 
 ## Acknowledgements
