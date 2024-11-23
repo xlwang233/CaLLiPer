@@ -52,7 +52,7 @@ We plan to add more stuff in the future:
 
 :white_check_mark: Pre-trained results for Space2Vec and HGI. See `baselines/pretrained`.
 :white_check_mark: Code for clustering visualisation (reproducing Figure 3 in the paper). See `vis_clustering.ipynb`.
-:black_square_button: Code for TF-IDF, LDA, Place2Vec. Coming soon.
+🔲 Code for TF-IDF, LDA, Place2Vec. Coming soon.
 
 ## Acknowledgements
 
