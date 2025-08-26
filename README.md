@@ -1,5 +1,7 @@
 # CaLLiPer - Contrastive Language-Location Pre-training
-Welcome! This is the repository for *CaLLiPer* model presented in our paper Multimodal Contrastive Learning of Urban Space Representations from POI Data (preprint: https://arxiv.org/abs/2411.06229). 
+Welcome! This is the repository for *CaLLiPer* model presented in our paper 
+[Multimodal Contrastive Learning of Urban Space Representations from POI Data](https://doi.org/10.1016/j.compenvurbsys.2025.102299), 
+published in *Computers, Environment and Urban Systems* (2025).
 
 ## :star: Highlights
 
@@ -7,7 +9,7 @@ Welcome! This is the repository for *CaLLiPer* model presented in our paper Mult
 - The first multimodal contrastive learning model to align spatial and semantic information.
 - Improved conceptualisation of urban space representations through location encoding.
 - Enhanced modelling of POI semantics by pre-trained text encoders.
-- State-of-the-art performance and interpretability.
+- State-of-the-art performance and interoperability (see also Extension — CaLLiPer+).
 
 
 ## Requirements
@@ -47,6 +49,17 @@ See the two Jupyter Notebooks, `luc.ipynb` and `sdm.ipynb`, for the complete dow
 
 Note that due to the size of *CaLLiPer-Llama*, we have not provided its checkpoint in this repo at the moment but will consider sharing it if requested.
 
+## Extension — CaLLiPer+
+
+We further propose **CaLLiPer+**, an extension of CaLLiPer.
+
+- Simple modification: replace the construction of POI descriptions to include **POI names** in addition to categories.
+- This enriched semantic information leads to **consistent improvements** (4–11%) in downstream tasks such as LUC and SDM.
+- POI names also enhance **location retrieval**, enabling the embeddings to distinguish fine-grained concepts.
+
+For details, please see our GIScience 2025 paper:  
+[*Enriching Location Representation with Detailed Semantic Information*](https://doi.org/10.4230/LIPIcs.GIScience.2025.3).
+
 ## TODOs
 We plan to add more stuff in the future:
 
@@ -65,10 +78,26 @@ We appreciate their inspiring works.
 ## Citation
 If you find this repo useful for your research, please consider citing the following paper:
 ```bibtex
-@article{wang2024multimodal,
-  title={Multimodal Contrastive Learning of Urban Space Representations from POI Data},
-  author={Wang, Xinglei and Cheng, Tao and Law, Stephen and Zeng, Zichao and Yin, Lu and Liu, Junyuan},
-  journal={arXiv preprint arXiv:2411.06229},
-  year={2024}
+
+@article{wang2025multi,
+  author    = {Wang, Xinglei and Cheng, Tao and Law, Stephen and Zeng, Zichao and Yin, Lu and Liu, Junyuan},
+  title     = {Multimodal Contrastive Learning of Urban Space Representations from POI Data},
+  journal   = {Computers, Environment and Urban Systems},
+  volume    = {120},
+  pages     = {102299},
+  year      = {2025},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.compenvurbsys.2025.102299}
+}
+
+@inproceedings{liu2025enriching,
+  author    = {Liu, Junyuan and Wang, Xinglei and Cheng, Tao},
+  title     = {Enriching Location Representation with Detailed Semantic Information},
+  booktitle = {13th International Conference on Geographic Information Science (GIScience 2025)},
+  series    = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  volume    = {346},
+  pages     = {3:1--3:15},
+  year      = {2025},
+  doi       = {10.4230/LIPIcs.GIScience.2025.3}
 }
 ```
